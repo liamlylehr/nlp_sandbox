@@ -12,3 +12,24 @@ $ source ./venv/bin/activate
 (venv) $ python -m pip install spacy
 (venv) $ python -m spacy download en_core_web_sm
 ```
+
+<h2>Sample:</h2>
+
+```python
+# Input designated in main.py
+text = "Monkey buys happy Bananas for $1 billion."
+```
+
+Run with 'python main.py' command </br>
+
+```bash
+# Output on cmd
+Entities: [('Bananas', 'GPE', 18, 25), ('$1 billion', 'MONEY', 30, 40)]
+Sentences: ['Monkey buys happy Bananas for $1 billion.']
+
+Entity: Bananas
+  Sentiment: neutral, Confidence: 0.51, Context: Monkey buys happy Bananas for $1 billion., Entity Type: GPE
+
+Entity: $1 billion
+  Sentiment: neutral, Confidence: 0.51, Context: Monkey buys happy Bananas for $1 billion., Entity Type: MONEY
+```
