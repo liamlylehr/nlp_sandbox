@@ -12,7 +12,9 @@ $ source ./venv/bin/activate
 (venv) $ python -m pip install spacy
 (venv) $ python -m spacy download en_core_web_sm
 ```
+
 Can also download en_core_web_md or en_core_web_lg (small, medium, large)
+
 <h2>Sample:</h2>
 
 ```python

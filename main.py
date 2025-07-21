@@ -5,7 +5,7 @@ from collections import defaultdict
 
 try:
     # Load models
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_md")
     sentiment_pipeline = pipeline("sentiment-analysis", 
                                 model="cardiffnlp/twitter-roberta-base-sentiment-latest")
 except Exception as e:
@@ -38,7 +38,7 @@ def analyze_entity_sentiment(text):
     
     return results
 
-text = "Monkey buys happy Bananas for $1 billion."
+text = "Mister Monkey buys happy Bananas for $1 billion. No more sad Monkeys!"
 print()
 results = analyze_entity_sentiment(text)
 
